@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+// import { useState } from 'react'
+// import heroImg from './assets/hero.png'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
 import './App.css'
 
 import Overlay from './overlay/overlay'
-import { useSharedState } from './shared/use-shared-state'
+// import { useSharedState } from './shared/use-shared-state'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
 
   return (
