@@ -1,6 +1,16 @@
+import express from 'express';
+import { createServer } from 'http';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { WebSocketServer } from 'ws';
 
-const wss = new WebSocketServer({ port: 8080 });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const app = express();
+app.use(express.static(path.join(__dirname, '..', 'dist')));
+
+const server = createServer(app);
+const wss = new WebSocketServer({ server });
+
 let state = { text: 'Count', value: 0 };
 
 wss.on('connection', (ws) => {
@@ -16,3 +26,4 @@ wss.on('connection', (ws) => {
     });
 });
 
+server.listen(process.env.PORT || 8080);

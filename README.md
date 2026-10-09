@@ -1,3 +1,6 @@
+# Overview
+This is an example project, made using vite, that demonstrates how to create an overlay that can be rendered in an OBS browser, and can communicate data via websockets.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.

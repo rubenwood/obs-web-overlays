@@ -11,14 +11,16 @@ export function useSharedState() {
         let timer: number;
 
         const connect = () => {
-            mySocket = new WebSocket('ws://localhost:8080')
+            const url = import.meta.env.VITE_WS_URL ?? `${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}`;
+
+            mySocket = new WebSocket(url);
             ws.current = mySocket;
             mySocket.onmessage = (event) => {
                 setState(JSON.parse(event.data));
             }
             mySocket.onclose = () => {
-                console.log('WebSocket closed. Reconnecting in 1 second...')
-                timer = window.setTimeout(connect, 1000)
+                console.log('WebSocket closed. Reconnecting in 1 second...');
+                timer = window.setTimeout(connect, 1000);
             }
         }
 

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useSharedState } from '../shared/use-shared-state';
 
 export default function Overlay() {
