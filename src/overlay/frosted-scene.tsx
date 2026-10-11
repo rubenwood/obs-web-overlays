@@ -1,6 +1,6 @@
 export default function FrostedScene() {
-  // This woiuld be the source stream
-  const EMBED_URL = 'https://www.youtube.com/embed/kysSb10QDv8?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0'
+  // This would be the source stream
+  //const EMBED_URL = 'https://www.youtube.com/embed/kysSb10QDv8?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0'
 
   const blur = "blur(18px) saturate(1.3) brightness(1.1)";
 
