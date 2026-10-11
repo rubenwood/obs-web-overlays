@@ -33,8 +33,8 @@ export function useSharedState() {
         }
     }, []);
 
-    const update = (patch: Partial<SharedState>) => {
-        ws.current?.send(JSON.stringify(patch));
+    const update = (updatedState: Partial<SharedState>) => {
+        ws.current?.send(JSON.stringify(updatedState));
     };
 
     return [state, update] as const;

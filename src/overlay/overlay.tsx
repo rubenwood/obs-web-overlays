@@ -17,18 +17,16 @@ export default function Overlay() {
         <div>
             <div>
                 <h1>Overlay</h1>
-                <p className="overlay-text">This is an overlay component.</p>
-                <p className="overlay-text">test</p><br/><br/><br/>
+                <p className="overlay-text">This is an overlay component</p>
                 <button
                     type="button"
                     className="counter"
                     onClick={() => updateValue(state.value)}
                     >
                     {state.text} {state.value}
-                    </button>
+                </button>
             </div>
             <div>
-                <p>TEST</p>
                 <ThreeScene />
             </div>
 
