@@ -1,4 +1,5 @@
 import { useSharedState } from '../shared/use-shared-state';
+import FrostedScene from './frosted-scene';
 import ThreeScene from './three-scene';
 
 export default function Overlay() {
@@ -25,6 +26,9 @@ export default function Overlay() {
                     >
                     {state.text} {state.value}
                 </button>
+            </div>
+            <div>
+                <FrostedScene />
             </div>
             <div>
                 <ThreeScene />
