@@ -1,6 +1,21 @@
 # Overview
 This is an example project, made using vite, that demonstrates how to create an overlay that can be rendered in an OBS browser, and can communicate data via websockets.
 
+# Running the example
+
+npm run dev:all
+
+Open
+
+http://localhost:5173/
+
+OR
+
+https://obs-web-overlays.onrender.com/
+
+
+also, open these in OBS; in your OBS scene, add a browser and point it at the either of the above URLs.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.

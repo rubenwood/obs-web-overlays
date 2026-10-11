@@ -1,4 +1,5 @@
 import { useSharedState } from '../shared/use-shared-state';
+import ThreeScene from './three-scene';
 
 export default function Overlay() {
     //const [count, setCount] = useState(0)
@@ -26,6 +27,11 @@ export default function Overlay() {
                     {state.text} {state.value}
                     </button>
             </div>
+            <div>
+                <p>TEST</p>
+                <ThreeScene />
+            </div>
+
         </div>
     );
 }
